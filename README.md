@@ -1,4 +1,4 @@
-# Creando un App en Android Studio
+# Creando una App en Android Studio
 Este proyecto lo creamos en base a una empresa de flores la cual gestionaba de forma manual su información y el propósito es que se implemente un app donde se almacene toda su información.
 
 Proyecto Grupal:
