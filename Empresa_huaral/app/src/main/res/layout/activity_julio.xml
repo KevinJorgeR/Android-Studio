@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".julio">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="339dp"
+        android:layout_height="33dp"
+        android:background="#32F41D"
+        android:fontFamily="sans-serif-black"
+        android:text="JULIO"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:foreground="@drawable/j"
+        android:scrollbarThumbHorizontal="@drawable/download_removebg_preview"
+        android:scrollbarThumbVertical="@drawable/download_removebg_preview"
+        android:scrollbarTrackHorizontal="@drawable/download_removebg_preview"
+        android:scrollbarTrackVertical="@drawable/download_removebg_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@android:style/Widget.DeviceDefault.TextView"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:background="#34FF07"
+        android:fontFamily="sans-serif-black"
+        android:text="FECHA"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="198dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TableLayout
+        android:layout_width="380dp"
+        android:layout_height="142dp"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243">
+
+        <!-- Primera fila de la tabla (títulos de las columnas) -->
+        <TableRow android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Categorías"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Grande"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Mediano"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Pequeño"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Filas de la tabla con los datos de las dalias y categorías -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Blanco"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/blgrande"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:isScrollContainer="false"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/blmediano"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/blchico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Rojo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/rjgrande"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/rjmediano"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/rjchico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Colores"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/clgrande"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/clmediano"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/clchico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cantidad "
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textSize="12sp" />
+        </TableRow>
+        <!-- Agregar más filas para las otras dalias y categorías, si es necesario -->
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="326dp"
+        android:layout_height="28dp"
+        android:background="#1FC8DD"
+        android:fontFamily="sans-serif-black"
+        android:text="CALCULAR GANANCIA"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <TableLayout
+        android:layout_width="377dp"
+        android:layout_height="391dp"
+        android:layout_margin="19dp"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Categoría"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Precios"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Calcular"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Ganancia"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Filas de la nueva tabla con los datos -->
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Blanco G"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaBlancoGrande"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textColorLink="#BFA5E8"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <!-- Agregar más filas para las otras categorías y precios, si es necesario -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Blanco M"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaBlancoMediano"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Blanco P"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaBlancoPequeno"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Rojo G"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaRojoGrande"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Rojo M"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaRojoMediano"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Rojo P"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaRojoPequeno"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Color G"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaColorGrande"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Color M"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaColorMediano"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Color P"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/monto9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btnganancia8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:backgroundTint="#FFC107"
+                    android:onClick="calcularGananciaColorPequeno"
+                    android:text="Calcular"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/ganancia9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Descuento"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/descuento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textSize="12sp" />
+
+            <!-- Puedes usar botones aquí según tus necesidades -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!-- Aquí puedes agregar los botones que necesites -->
+                <Button
+                    android:id="@+id/btntotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#FF0404"
+                    android:onClick="calcularTotalGanancias"
+                    android:text="TOTAL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Columna de Ganancia, aquí puedes mostrar el resultado del cálculo -->
+            <TextView
+                android:id="@+id/totalganancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="S/."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
